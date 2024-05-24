@@ -1,0 +1,17 @@
+{
+  "name": "@absinthelabs/points-client",
+  "version": "0.0.1-alpha.1",
+  "description": "A command-line tool for managing API keys, distributing points, and viewing reward data on the Absinthe platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sylvester Olawale",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.22"
+  }
+}
