@@ -152,13 +152,13 @@ const register = async (name) => {
     if (options.event) {
       event = options.event;
     } else {
-      const q = required ? "What's the event name for the points you want to distribute?" : "What's the event name for the points you want to view? Leave blank if you want to view all points.";
+      const message = required ? 'Please enter the event name to which the points will be distributed:' : 'Enter the event name to view specific points or leave blank to view all:';
       const answers = await inquirer.prompt([
         {
           // make it optional
           type: 'input',
           name: 'event',
-          message: q,
+          message: message,
         },
       ]);
 
@@ -229,13 +229,12 @@ const register = async (name) => {
   const options = program.opts();
   // DECLARE ACTIONS
   program
-    .command('getPointsByCampaign')
-    .description('View points for an address in a campaign')
+    .command('getPointsByEvent')
+    .description('View points for an address for a specific event in a campaign')
     .action(async () => {
       const key = await getKey();
       const addr = await getAddress();
       const evt = await getEvent();
-      // const pts = await getAmount()
 
       const points = await getPoints(addr, evt, key);
       if (points?.points?.length) {
@@ -254,7 +253,7 @@ const register = async (name) => {
 
   program
     .command('getPoints')
-    .description('View all points for an address in all campaigns')
+    .description('View all points for an address for all the events in a campaign')
     .action(async () => {
       const key = await getKey();
       const addr = await getAddress();
@@ -275,7 +274,7 @@ const register = async (name) => {
 
   program
     .command('distribute')
-    .description('Distribute points for an address in a campaign')
+    .description('Distribute points for an address for a specific event in a campaign')
     .action(async () => {
       const key = await getKey();
       const addr = await getAddress();

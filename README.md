@@ -41,9 +41,9 @@ Options:
 Commands:
 
 - register -- Registers a campaign with a given name and returns an API key and identifier for that campaign
-- distribute -- Distribute points for an address in a campaign
-- getPointsByCampaign -- View points for an address in a campaign
-- getPoints -- View all points for an address in all campaigns
+- distribute -- Distribute points for an address for a specific event in a campaign
+- getPointsByEvent -- View points for an address for a specific event in a campaign
+- getPoints -- View all points for an address for all the events in a campaign
 - help -- display help for command
 
 ## Commands
@@ -84,7 +84,7 @@ This command gets all the points for the given address.
 
 ![GetPoints](https://i.postimg.cc/8CSF3CMn/screenshot3-absinthe-points-client.png)
 
-#### 4. Get Points By Campaign
+#### 4. Get Points By Event
 
 ```bash
 npx @waliba/absinthe-points-sdk getPointsByCampaign -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
