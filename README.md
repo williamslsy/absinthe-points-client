@@ -78,7 +78,7 @@ This command distributes points to the specified address for the specified event
 npx @waliba/absinthe-points-sdk getPoints -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
 ```
 
-This command gets all the points for the given address.
+This command gets all the points for the given address for all events in a campaign.
 
 ##### Screenshot
 
@@ -90,7 +90,11 @@ This command gets all the points for the given address.
 npx @waliba/absinthe-points-sdk getPointsByCampaign -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
 ```
 
-This command gets all the points for the specified address in the specified campaign.
+This command gets the points for the given address for a specific event in a campaign
+
+##### Screenshot
+
+![GetPointsByEvent](https://i.postimg.cc/L4JQq8gk/screenshot4-absinthe-points-client.png)
 
 ## Extra
 
