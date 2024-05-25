@@ -1,5 +1,5 @@
 {
-  "name": "@absinthelabs/points-client",
+  "name": "@waliba/absinthe-points-client",
   "version": "0.0.1-alpha.1",
   "description": "A command-line tool for managing API keys, distributing points, and viewing reward data on the Absinthe platform",
   "main": "index.js",
