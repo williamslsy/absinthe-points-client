@@ -152,7 +152,7 @@ const register = async (name) => {
     if (options.event) {
       event = options.event;
     } else {
-      const message = required ? 'Please enter the event name to which the points will be distributed:' : 'Enter the event name to view specific points or leave blank to view all:';
+      const message = required ? 'Please enter the event name to which the points will be distributed:' : 'Enter the event name to view specific points:';
       const answers = await inquirer.prompt([
         {
           // make it optional
