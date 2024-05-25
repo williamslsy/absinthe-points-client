@@ -1,6 +1,6 @@
-# Absinthe Client
+# Absinthe Points SDK
 
-`absinthe-points-client` is a command-line tool that helps you manage your campaigns and distribute points to your user addresses.
+`absinthe-points-sdk` is a command-line tool that helps you manage your campaigns and distribute points to your user addresses.
 
 ## Table of Contents
 
@@ -12,21 +12,21 @@
 
 ## Installation
 
-Before using `absinthe-points-client`, make sure you have Node.js and npm installed on your system. You can install it globally using npm:
+Before using `absinthe-points-sdk`, make sure you have Node.js and npm installed on your system. You can install it globally using npm:
 
 ```bash
-npm install -g @waliba/absinthe-points-client
+npm install -g @waliba/absinthe-points-sdk
 ```
 
 Alternatively, you can use npx to run it without installing it globally:
 
 ```bash
-npx @waliba/absinthe-points-client
+npx @waliba/absinthe-points-sdk
 ```
 
 ## Usage
 
-Usage: absinthe-points-client [options] [command]
+Usage: absinthe-points-sdk [options] [command]
 
 Options:
 
@@ -51,7 +51,7 @@ Commands:
 #### 1. Register
 
 ```bash
-npx @waliba/absinthe-points-client register -n "Project Name" or --name "Project Name"
+npx @waliba/absinthe-points-sdk register -n "Project Name" or --name "Project Name"
 ```
 
 This command registers a project with the given name and returns the address.
@@ -65,7 +65,7 @@ This command registers a project with the given name and returns the address.
 #### 2. Distribute
 
 ```bash
-npx @waliba/absinthe-points-client -a "0x1234567890" -e "Event Name" -m 100
+npx @waliba/absinthe-points-sdk -a "0x1234567890" -e "Event Name" -m 100
 ```
 
 This command distributes points to the given address for the given event.
@@ -79,7 +79,7 @@ This command distributes points to the given address for the given event.
 #### 3. Get Points
 
 ```bash
-npx @waliba/absinthe-points-client getPoints -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
+npx @waliba/absinthe-points-sdk getPoints -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
 ```
 
 This command gets all the points for the given address.
@@ -87,7 +87,7 @@ This command gets all the points for the given address.
 #### 4. Get Points By Campaign
 
 ```bash
-npx @waliba/absinthe-points-client getPointsByCampaign -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
+npx @waliba/absinthe-points-sdk getPointsByCampaign -a "0x1234567890" -k "d8c263fc-c820-49b7-af31-cafe95720322"
 ```
 
 This command gets all the points for the given address in the given campaign.
@@ -99,7 +99,7 @@ Also --help command shows all info about the CLI
 
 ## Contributing
 
-We welcome contributions to improve absinthe-points-client. If you find a bug or have a feature request, please open an issue on the GitHub repository.
+We welcome contributions to improve absinthe-points-sdk. If you find a bug or have a feature request, please open an issue on the GitHub repository.
 
 ## License
 

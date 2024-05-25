@@ -1,5 +1,5 @@
 {
-  "name": "@waliba/absinthe-points-client",
+  "name": "@waliba/absinthe-points-sdk",
   "version": "1.0.0",
   "description": "A command-line tool for managing API keys, distributing points, and viewing reward data on the Absinthe platform",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "./bin/absinthe-points-client.js",
+  "bin": "./bin/absinthe-points-sdk.js",
   "author": "Sylvester Olawale",
   "license": "MIT",
   "dependencies": {

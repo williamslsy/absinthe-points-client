@@ -10,6 +10,7 @@ let api_key = '';
 let address = '';
 let event = '';
 let amount = 0;
+let name = '';
 
 const BASE_URL = 'https://localhost:3000/';
 const getPoints = async (address, event, api_key) => {
@@ -205,7 +206,7 @@ const register = async (name) => {
     if (options.name) {
       name = options.name;
     } else {
-      const q = "What's the name of your business?";
+      const q = "What's the name of your project?";
       const answers = await inquirer.prompt([
         {
           // make it optional
@@ -302,8 +303,8 @@ const register = async (name) => {
     .action(async () => {
       const name = await getName();
       const result = await register(name);
-      if (result?.business) {
-        const displayPoints = result.business;
+      if (result?.project) {
+        const displayPoints = result.project;
         if (options.quiet) {
           return console.log(displayPoints);
         }
