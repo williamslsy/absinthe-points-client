@@ -1,6 +1,6 @@
 {
   "name": "@waliba/absinthe-points-sdk",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A command-line tool for managing API keys, distributing points, and viewing reward data on the Absinthe platform",
   "main": "index.js",
   "type": "module",
