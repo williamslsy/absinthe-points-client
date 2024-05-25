@@ -12,7 +12,7 @@ let event = '';
 let amount = 0;
 let name = '';
 
-const BASE_URL = 'https://localhost:3000/';
+const BASE_URL = 'https://absinthe-points.vercel.app/';
 const getPoints = async (address, event, api_key) => {
   const url = `${BASE_URL}/api/points/${address}`;
   const token = `Bearer ${api_key}`;
