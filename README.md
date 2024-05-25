@@ -58,9 +58,7 @@ This command registers a project with the given name and returns the address.
 
 ##### Screenshots
 
-![Register](
-
-)
+![Register](https://i.postimg.cc/tCmSjKgj/screenshot1-absinthe-points-client.png)
 
 #### 2. Distribute
 
@@ -72,9 +70,7 @@ This command distributes points to the given address for the given event.
 
 ##### Screenshots
 
-![Distribute](
-
-)
+![Distribute](https://i.postimg.cc/KvdPQxzR/screenshot2-absinthe-points-client.png)
 
 #### 3. Get Points
 
@@ -94,7 +90,7 @@ This command gets all the points for the given address in the given campaign.
 
 ## Extra
 
-Any key that is not passed will be asked again by the cli. So feel free to just paste the command.
+Any key that is not passed will be asked again by the cli. You can just paste the command.
 Also --help command shows all info about the CLI
 
 ## Contributing
