@@ -90,7 +90,7 @@ const register = async (name) => {
   // check if the api_key is already set via --api-key
   program.option('-k, --apiKey <apiKey>', 'The api key to use for the absinthe client');
   program.option('-a, --address <address>', 'The address to use for the absinthe client');
-  program.option('-e, --event <event>', 'The event to use for the absinthe client');
+  program.option('-e, --event <event>', 'The event name to use for the absinthe client');
   program.option('-m, --amount <amount>', 'The amount to use for the absinthe client');
   program.option('-q, --quiet <quiet>', 'Do not display any helpful text just request and response');
   program.option('-n, --name <name>', 'Name to use while registering');
@@ -133,7 +133,7 @@ const register = async (name) => {
         {
           type: 'input',
           name: 'address',
-          message: "What's the address for the user?",
+          message: "What's the address of this user?",
         },
       ]);
 
@@ -234,7 +234,7 @@ const register = async (name) => {
     .action(async () => {
       const key = await getKey();
       const addr = await getAddress();
-      const evt = await getEvent(true);
+      const evt = await getEvent();
       // const pts = await getAmount()
 
       const points = await getPoints(addr, evt, key);
@@ -299,7 +299,7 @@ const register = async (name) => {
 
   program
     .command('register')
-    .description('Distribute points for an address in a campaign')
+    .description('Register a campaign')
     .action(async () => {
       const name = await getName();
       const result = await register(name);
